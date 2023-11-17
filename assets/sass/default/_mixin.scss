@@ -1,0 +1,60 @@
+@mixin flex() {
+    display: flex;
+}
+
+@mixin direction($direction) {
+    flex-direction: $direction;
+}
+
+@mixin basis($flexBasis) {
+   flex-basis: $flexBasis;
+}
+
+@mixin wrap($wrap) {
+    flex-wrap: $wrap;
+}
+
+@mixin align($align) {
+    align-items: $align;
+}
+
+@mixin justify($justify) {
+    justify-content: $justify;
+}
+
+@mixin image($width:null,$height:auto,$objFit:null) {
+    width: $width;
+    height: $height;
+    object-fit: $objFit;
+}
+
+@mixin fontSize ($size: null, $weight: null, $family: null) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;
+}
+
+@mixin transition ($property: all, $time:null, $func:null) {
+    transition: $property $time $func;
+}
+
+@mixin transform ($transform) {
+    transform: $transform;
+}
+
+@mixin position ($position:null, $z-index:null, $top:null, $right:null, $bottom:null, $left:null){
+position: $position;
+z-index: $z-index;
+top: $top;
+right: $right;
+bottom: $bottom;
+left: $left;
+}
+
+@mixin boxSizing($property) {
+    box-sizing: $property;
+}
+
+@mixin responsive($value) {
+    
+}
