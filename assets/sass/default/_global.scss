@@ -1,0 +1,12 @@
+body {
+    overflow: hidden;
+    @include font-size($family: sans-serif);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li { list-style-type: none; }
+
