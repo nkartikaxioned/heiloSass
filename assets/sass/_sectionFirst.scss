@@ -1,0 +1,87 @@
+.section-first {
+    padding: 86px 0;
+    background: map-get($map: $colors, $key: backgroundColor);
+
+    @at-root {
+        .wrapper {
+
+            width: 86%;
+            margin: 0 auto;
+        }
+    
+        &__list {
+            @include flex();
+        }
+
+        &__list li {
+            width: 47%;
+           
+        }
+
+        &__list li figure {
+            width: 100%;
+        }
+        
+        &__list li figure img { @include image($width: 100%,$objFit: cover) }  
+
+        &__list li:last-child {
+            margin-left: 6%;
+        }
+
+        &__content {
+            padding: 55px;
+            background: map-get($map: $colors, $key: whiteColor);
+        }
+        
+        .underline--line,.heading--header { text-align: center; }
+
+        .underline--line {
+            display: block;
+            @include fontSize($size: 14px)
+        }
+
+        .underline--line::after {
+            content: "";
+        width: 0;
+        height: 1px;
+        margin: auto;
+        display: block;
+        align-items: center;
+        background: map-get($map: $colors, $key: fontColorGrey);
+        }
+
+        .underline--line::after {
+            width: 40%;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        }
+
+        .heading--header {
+            @include fontSize($size: 25px)
+        }
+
+        &__content p {
+            margin: 25px 0;
+            line-height: 1.5;
+        }
+
+        &__button {
+            justify-content: center;
+            @include flex();
+        }
+
+        &__button a {
+            padding: 8px 12px;
+            border: 1.5px solid map-get($map: $colors, $key: fontColorGrey);
+            color: map-get($map: $colors, $key: blackColor);
+            text-transform: uppercase;
+            transition: .3s;
+            @include fontSize($size: 15px)
+        }
+ 
+        &__button a:hover {
+            background: map-get($map: $colors, $key: fontColorGrey);
+            color: map-get($map: $colors, $key: whiteColor);
+        }
+    }
+}

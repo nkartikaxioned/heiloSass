@@ -1,0 +1,79 @@
+.banner-section {
+    width: 100%;
+    height: 110vh;
+    
+    @include position($position: relative);
+
+    &__slider,&__slider li,&__slider figure,.wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slider li:not(:first-child) { display: none; }
+
+    &__slider { 
+        overflow: hidden;
+        @include position($position: absolute, $top: 0, $left: 0);
+        @include flex();
+    }
+
+    &__slider figure img {
+       filter: brightness(60%);
+       @include image($width: 100%, $height: 100%, $objFit: cover);
+       
+    }
+
+    &__structure {
+        @include position($position: absolute, $top: 50%, $left: 50%);
+        @include transform($transform: translate(-50%,-50%));
+    }
+
+    .underline {
+        white-space: nowrap;
+        @include fontSize($size: 16px);
+        @include responsive(map-get($devices, ipad)){
+            white-space: normal;
+            text-align: center;
+            @include fontSize($size: 13px);
+        }
+    }
+
+    .underline::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        margin: auto;
+        display: block;
+        align-items: center;
+        background: map-get($map: $colors, $key: whiteColor);
+    }
+    .underline::after {
+        width: 48%;
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        text-align: center;
+        @include fontSize($size: 100px); 
+        @include responsive(map-get($devices, tablet)){
+            @include fontSize($size: 70px)
+        }
+    }
+
+    &__slider-page {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        @include flex();
+        @include transform(translate(-50%,-8%));
+    }
+
+    &__slider-page li a {
+        margin: 0 9px 0;
+        padding: 7px;
+        border-radius: 10px;
+        background: map-get($map: $colors, $key: whiteColor);
+        @include fontSize($size: 0);
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+    @include fontSize($family: sans-serif);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li { list-style-type: none; }
+
+.underline {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.heading::first-letter { text-transform: capitalize; }
+
+.footer-icon {
+    color: map-get($map: $colors, $key: symbolColor);
+    @include fontSize($size: 0);
+    transition: .3s;
+}
+
+.grey { color: map-get($map: $colors, $key: symbolColor); }
+.light-grey { color: map-get($map: $colors, $key: fontColorGrey); }
+.white-color { color: map-get($map: $colors, $key: whiteColor); }
