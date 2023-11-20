@@ -1,0 +1,28 @@
+.header-section {
+    width: 100%;
+    padding: 40px 20px;
+    @include position($position:fixed);
+    background: transparent;
+
+    &__list {
+        @include flex();
+        @include justify($justify: space-between);
+    }
+
+    &__main-logo {
+        text-transform:capitalize;
+        @include fontSize($size: 18px)
+    }
+
+    &__bold {
+        text-transform:uppercase;
+        @include fontSize($size: 15px)
+    }
+
+    &__menu { @include fontSize($size: 15px) }
+    &__menu::before {
+        content: "\f0c9";
+        margin-right: 8px;
+        font-family: "fontAwesome";
+    }
+}
