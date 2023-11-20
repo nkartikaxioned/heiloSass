@@ -502,4 +502,32 @@ li {
   .section-third .spacing {
     margin-left: 62px; }
 
+.footer-section {
+  padding: 60px 0;
+  background: #000; }
+  .footer-section .footer-icon::after {
+    font-family: "fontAwesome";
+    font-size: 25px; }
+  .footer-section .footer-icon:hover {
+    color: #fff; }
+  .footer-section .twitter::after {
+    content: "\f099"; }
+  .footer-section .facebook::after {
+    content: "\f09a"; }
+  .footer-section .instagram::after {
+    content: "\f16d"; }
+  .footer-section .mail::after {
+    content: "\f0e0"; }
+  .footer-section__span {
+    display: block;
+    color: #808080;
+    text-align: center;
+    font-size: 14px; }
+  .footer-section__list {
+    padding: 0 0 40px 0;
+    justify-content: center;
+    display: flex; }
+  .footer-section__list li {
+    padding: 0 8px 0 8px; }
+
 /*# sourceMappingURL=style.css.map */
