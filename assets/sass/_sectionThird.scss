@@ -1,0 +1,50 @@
+.section-third {
+    padding: 85px 0; 
+    background: map-get($map: $colors, $key: backgroundColor);
+
+   .underline--line-third {
+    text-align: center;
+    @include fontSize($size: 14px);
+   }
+
+   .underline--line-third::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: map-get($map: $colors, $key: fontColorGrey);
+   }
+
+   .underline--line-third::after {
+        width: 40%;
+        margin-top: 15px;
+        margin-bottom: 12px;
+   }
+
+   .heading--head-third {
+    text-align: center;
+    @include fontSize($size: 25px)
+   }
+
+   ul {
+    margin-top: 45px;
+   @include flex();
+   @include wrap($wrap: wrap); 
+   }
+
+   li {
+    width: 47%;
+  padding-bottom: 60px;
+   }
+
+   img { 
+    border: 15px solid map-get($map: $colors, $key: whiteColor); 
+    @include image($width:100%,$height:null,$objFit:cover);
+}
+
+.spacing {
+    margin-left: 62px;
+}
+}
