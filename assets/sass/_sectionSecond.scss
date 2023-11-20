@@ -1,0 +1,52 @@
+.section-second {
+
+    height: 240px;
+    position: relative;
+
+    .wrapper, figure {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
+    img { 
+        filter: brightness(40%);
+        @include image($width:100%,$height:100%,$objFit:cover) 
+    }
+
+    .underline--line-second {
+        @include fontSize($size: 14px)
+    }
+
+    .underline--line-second::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        margin: auto;
+        display: block;
+        align-items: center;
+        background: map-get($map: $colors, $key: fontColorGrey);
+    }
+
+    .underline--line-second::after {
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+
+    div {
+        justify-content: center;
+        align-items: center;
+        @include flex();
+        @include direction($direction: column);
+    }
+
+    .heading--head-second {
+        @include fontSize($size: 25px)
+    }
+}

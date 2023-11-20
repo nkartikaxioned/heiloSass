@@ -430,4 +430,41 @@ li {
     background: #BAB6B2;
     color: #fff; }
 
+.section-second {
+  height: 240px;
+  position: relative; }
+  .section-second .wrapper, .section-second figure {
+    width: 100%;
+    height: 100%; }
+  .section-second figure {
+    position: absolute;
+    left: 0;
+    z-index: -1; }
+  .section-second img {
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .section-second .underline--line-second {
+    font-size: 14px; }
+  .section-second .underline--line-second::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: #BAB6B2; }
+  .section-second .underline--line-second::after {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 12px; }
+  .section-second div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  .section-second .heading--head-second {
+    font-size: 25px; }
+
 /*# sourceMappingURL=style.css.map */
