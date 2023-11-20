@@ -248,7 +248,7 @@ li {
   list-style-type: none; }
 
 .underline {
-  letter-spacing: 1.5;
+  letter-spacing: 1.5px;
   text-transform: uppercase; }
 
 .heading::first-letter {
@@ -272,21 +272,90 @@ li {
   width: 100%;
   padding: 40px 20px;
   position: fixed;
+  z-index: 1;
   background: transparent; }
   .header-section__list {
     display: flex;
     justify-content: space-between; }
   .header-section__main-logo {
     text-transform: capitalize;
+    transition: .3s;
     font-size: 18px; }
+  .header-section__main-logo:hover, .header-section__menu:hover {
+    color: #BAB6B2; }
   .header-section__bold {
     text-transform: uppercase;
     font-size: 15px; }
   .header-section__menu {
+    transition: .3s;
     font-size: 15px; }
   .header-section__menu::before {
     content: "\f0c9";
     margin-right: 8px;
     font-family: "fontAwesome"; }
+
+.banner-section {
+  width: 100%;
+  height: 110vh;
+  position: relative; }
+  .banner-section__slider, .banner-section__slider li, .banner-section__slider figure, .banner-section .wrapper {
+    width: 100%;
+    height: 100%; }
+  .banner-section__slider li:not(:first-child) {
+    display: none; }
+  .banner-section__slider {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex; }
+  .banner-section__slider figure img {
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .banner-section__structure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .banner-section .underline {
+    white-space: nowrap;
+    font-size: 16px; }
+    @media only screen and (max-width: 768px) {
+      .banner-section .underline {
+        white-space: normal;
+        text-align: center;
+        font-size: 13px; } }
+  .banner-section .underline::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: #fff; }
+  .banner-section .underline::after {
+    width: 48%;
+    margin-top: 28px;
+    margin-bottom: 20px; }
+  .banner-section .heading {
+    text-align: center;
+    font-size: 100px; }
+    @media only screen and (max-width: 995px) {
+      .banner-section .heading {
+        font-size: 70px; } }
+  .banner-section__slider-page {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -8%); }
+  .banner-section__slider-page li a {
+    margin: 0 9px 0;
+    padding: 7px;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 0; }
 
 /*# sourceMappingURL=style.css.map */

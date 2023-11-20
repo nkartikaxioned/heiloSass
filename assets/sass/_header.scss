@@ -1,7 +1,7 @@
 .header-section {
     width: 100%;
     padding: 40px 20px;
-    @include position($position:fixed);
+    @include position($position:fixed, $z-index:1);
     background: transparent;
 
     &__list {
@@ -11,7 +11,12 @@
 
     &__main-logo {
         text-transform:capitalize;
+        transition: .3s;
         @include fontSize($size: 18px)
+    }
+
+    &__main-logo:hover,&__menu:hover {
+        color: map-get($map: $colors, $key: fontColorGrey);
     }
 
     &__bold {
@@ -19,10 +24,14 @@
         @include fontSize($size: 15px)
     }
 
-    &__menu { @include fontSize($size: 15px) }
+    &__menu { 
+        transition: .3s;
+        @include fontSize($size: 15px) 
+    }
     &__menu::before {
         content: "\f0c9";
         margin-right: 8px;
         font-family: "fontAwesome";
     }
+    
 }
