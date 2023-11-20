@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Heilo</title>
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
@@ -22,20 +22,20 @@
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
+    <header class="header-section">
       <div class="wrapper">
         <nav>
-          <ul class="nav-list">
+          <ul class="header-section__list">
             <li>
-              <h1>
-                <a href="#FIXME" title="header" class="font-color-lightgrey"><span
-                    class="font-color-white caps-first">hielo</span><span class="uni"> by</span><span
-                    class="font-color-lightgrey capss"> templated</span>
+              <h1 class="header-section__logo white-color">
+                <a href="index.html" title="header" class="logo"><span
+                    class="header-section__main-logo white-color">hielo</span><span class="light-grey"> by</span><span
+                    class="header-section__bold light-grey"> templated</span>
                 </a>
               </h1>
             </li>
             <li>
-              <a href="#FIXME" class="font-color-white caps-first" title="Menu">Menu</a>
+              <a href="#FIXME" class="header-section__menu white-color" title="Menu">Menu</a>
             </li>
           </ul>
         </nav>
@@ -45,93 +45,73 @@
     <!--main section start-->
     <main>
       <!-- banner section start -->
-      <section class="banner">
+      <section class="banner-section">
         <div class="wrapper">
-          <div class="slider">
-            <ul>
-              <li>
-                <figure><img src="./assets/images/slide01.jpg" alt="Image"></figure>
-                <div class="banner-structure">
-                  <p class="font-color-lightgrey caps">a free responsive website template by <span
-                      class="font-color-white caps">templated</span></p>
-                  <h2 class="font-color-white caps-first">hielo</h2>
-                </div>
-              </li>
-              <li>
-                <figure><img src="./assets/images/slide02.jpg" alt="Image"></figure>
-                <div class="banner-structure">
-                  <p class="font-color-lightgrey caps">a free responsive website template by <span
-                      class="font-color-white caps">templated</span></p>
-                  <h2 class="font-color-white caps-first">hielo</h2>
-                </div>
-              </li>
-              <li>
-                <figure><img src="./assets/images/slide03.jpg" alt="Image"></figure>
-                <div class="banner-structure">
-                  <p class="font-color-lightgrey caps">a free responsive website template by <span
-                      class="font-color-white caps">templated</span></p>
-                  <h2 class="font-color-white caps-first">hielo</h2>
-                </div>
-              </li>
-              <li>
-                <figure><img src="./assets/images/slide04.jpg" alt="Image"></figure>
-                <div class="banner-structure">
-                  <p class="font-color-lightgrey caps">a free responsive website template by <span
-                      class="font-color-white caps">templated</span></p>
-                  <h2 class="font-color-white caps-first">hielo</h2>
-                </div>
-              </li>
-              <li>
-                <figure><img src="./assets/images/slide05.jpg" alt="Image"></figure>
-                <div class="banner-structure">
-                  <p class="font-color-lightgrey caps">a free responsive website template by <span
-                      class="font-color-white caps">templated</span></p>
-                  <h2 class="font-color-white caps-first">hielo</h2>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-page">
-            <ul>
-              <li><a href="#FIXME" title="1">1</a></li>
-              <li><a href="#FIXME" title="2">2</a></li>
-              <li><a href="#FIXME" title="3">3</a></li>
-              <li><a href="#FIXME" title="4">4</a></li>
-              <li><a href="#FIXME" title="5">5</a></li>
-            </ul>
-          </div>
+          <ul class="banner-section__slider">
+            <li>
+              <figure><img src="./assets/images/slide01.jpg" alt="Image"></figure>
+              <div class="banner-section__structure">
+                <p class="underline light-grey">a free responsive website template by <span
+                    class="bold white-color">templated</span></p>
+                <h2 class="heading white-color">hielo</h2>
+              </div>
+            </li>
+            <li>
+              <figure><img src="./assets/images/slide02.jpg" alt="Image"></figure>
+              <div class="banner-section__structure">
+                <p class="underline light-grey">a free responsive website template by <span
+                    class="bold white-color">templated</span></p>
+                <h2 class="heading white-color">hielo</h2>
+              </div>
+            </li>
+            <li>
+              <figure><img src="./assets/images/slide03.jpg" alt="Image"></figure>
+              <div class="banner-section__structure">
+                <p class="underline light-grey">a free responsive website template by <span
+                    class="bold white-color">templated</span></p>
+                <h2 class="heading white-color">hielo</h2>
+              </div>
+            </li>
+          </ul>
+          <ul class="banner-section__slider-page">
+            <li><a href="#FIXME" title="1">1</a></li>
+            <li><a href="#FIXME" title="2">2</a></li>
+            <li><a href="#FIXME" title="3">3</a></li>
+            <li><a href="#FIXME" title="4">4</a></li>
+            <li><a href="#FIXME" title="5">5</a></li>
+          </ul>
         </div>
       </section>
       <!-- banner section end -->
       <!-- section-first start -->
-      <section class="section-first backgroung-grey">
+      <section class="section-first">
         <div class="wrapper">
-          <ul>
+          <ul class="section-first__list">
             <li>
               <figure><img src="./assets/images/pic02.jpg" alt="Image"></figure>
-              <div class="content background-white">
-                <span class="font-color-lightgrey caps borderr block">Lorem ipsum dolor sit amet</span>
-                <h3 class="caps-first text-alignment">lorem ipsum dolor</h3>
-                <p class="font-color-lightgrey letter text-alignment">
+              <div class="section-first__content">
+                <span class="underline underline--line grey">Lorem ipsum dolor sit amet</span>
+                <h3 class="heading heading--header">lorem ipsum dolor</h3>
+                <p class="grey">
                   lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quasi eveniet quibusdam blanditiis a
                   quos illum expedita inventore necessitatibus autem et, provident esse aperiam sed minus quaerat sunt
                   amet libero.
                 </p>
-                <div class="button block"><a href="#FIXME" title="Button" class="caps font-color-black">learn more</a>
+                <div class="section-first__button"><a href="#FIXME" title="Learn More">learn more</a>
                 </div>
               </div>
             </li>
             <li>
               <figure><img src="./assets/images/pic03.jpg" alt="Image"></figure>
-              <div class="content background-white">
-                <span class="font-color-lightgrey caps borderr block">Lorem ipsum dolor sit amet</span>
-                <h3 class="caps-first text-alignment">lorem ipsum dolor</h3>
-                <p class="font-color-lightgrey letter text-alignment">
+              <div class="section-first__content">
+                <span class="underline underline--line grey">Lorem ipsum dolor sit amet</span>
+                <h3 class="heading heading--header">lorem ipsum dolor</h3>
+                <p class="grey">
                   lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quasi eveniet quibusdam blanditiis a
                   quos illum expedita inventore necessitatibus autem et, provident esse aperiam sed minus quaerat sunt
                   amet libero.
                 </p>
-                <div class="button block"><a href="#FIXME" title="Button" class="caps font-color-black">learn more</a>
+                <div class="section-first__button"><a href="#FIXME" title="Learn More">learn more</a>
                 </div>
               </div>
             </li>
@@ -142,25 +122,25 @@
       <!-- section-second start -->
       <section class="section-second">
         <div class="wrapper">
-          <figure><img src="./images/bg.jpg" alt="Section-Second-Background"></figure>
+          <figure><img src="./assets/images/bg.jpg" alt="Section-Second__Background"></figure>
           <div>
-            <p class="font-color-lightgrey borderr text-alignment">Lorem ipsum dolor sit amet consectetur adipisicing
+            <p class="underline underline--line-second light-grey">Lorem ipsum dolor sit amet consectetur adipisicing
               elit</p>
-            <h3 class="caps-first font-color-white text-alignment">morbi maximus justo</h3>
+            <h3 class="heading heading--head-second white-color">morbi maximus justo</h3>
           </div>
         </div>
       </section>
-      <section class="section-third backgroung-grey">
+      <section class="section-third">
         <div class="wrapper">
-          <p class="font-color-lightgrey borderr text-alignment">Lorem ipsum dolor sit amet consectetur adipisicing elit
+          <p class="underline underline--line-third grey">Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
-          <h3 class="caps-first font-color-black text-alignment">morbi maximus justo</h3>
+          <h3 class="heading heading--head-third">morbi maximus justo</h3>
           <div>
             <ul>
               <li><img src="./assets/images/pic01.jpg" alt="Image"></li>
-              <li><img src="./assets/images/pic02.jpg" alt="Image"></li>
+              <li class="spacing"><img src="./assets/images/pic02.jpg" alt="Image"></li>
               <li><img src="./assets/images/pic03.jpg" alt="Image"></li>
-              <li><img src="./assets/images/pic04.jpg" alt="Image"></li>
+              <li class="spacing"><img src="./assets/images/pic04.jpg" alt="Image"></li>
             </ul>
           </div>
         </div>
@@ -170,15 +150,15 @@
     <!--main section end-->
 
     <!--footer section start-->
-    <footer class="background-black">
+    <footer class="footer-section">
       <div class="wrapper">
-        <ul>
-          <li><a href="#FIXME" title="Twitter" class="font-color-lightgrey">twitter</a></li>
-          <li><a href="#FIXME" title="Facebook" class="font-color-lightgrey">facebook</a></li>
-          <li><a href="#FIXME" title="Instagram" class="font-color-lightgrey">Instagram</a></li>
-          <li><a href="#FIXME" title="Mail" class="font-color-lightgrey">mail</a></li>
+        <ul class="footer-section__list">
+          <li><a href="#FIXME" title="Twitter" class="footer-icon twitter">twitter</a></li>
+          <li><a href="#FIXME" title="Facebook" class="footer-icon facebook">facebook</a></li>
+          <li><a href="#FIXME" title="Instagram" class="footer-icon instagram">instagram</a></li>
+          <li><a href="#FIXME" title="Mail" class="footer-icon mail">mail</a></li>
         </ul>
-        <span class="caps-first font-color-lightgrey">&#64; untitled. all rights reserved</span>
+        <span class="footer-section__span">&#64; untitled. All rights reserved</span>
       </div>
     </footer>
     <!--footer section end-->
