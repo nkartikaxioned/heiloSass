@@ -1,10 +1,21 @@
 .section-third {
-    padding: 85px 0; 
+    padding: 85px 0  40px; 
     background: map-get($map: $colors, $key: backgroundColor);
+    @include responsive(map-get($devices, tablet)){
+        padding: 45px 0; 
+    }
+    .wrapper {
+        @include responsive(map-get($devices, laptop)){
+            width: 94%;
+      } 
+    }
 
    .underline--line-third {
     text-align: center;
     @include fontSize($size: 14px);
+    @include responsive(map-get($devices, extralargePhone)){
+        @include fontSize($size: 12px);
+  }
    }
 
    .underline--line-third::after {
@@ -32,11 +43,19 @@
     margin-top: 45px;
    @include flex();
    @include wrap($wrap: wrap); 
+   @include responsive(map-get($devices,tablet)){
+    align-items: center;
+    @include direction($direction: column)
+   }
    }
 
    li {
     width: 47%;
-  padding-bottom: 60px;
+    padding-bottom: 52px;
+    @include responsive(map-get($devices,tablet)){
+        width: 97%;
+        padding-bottom: 22px;
+       }
    }
 
    img { 
@@ -45,6 +64,9 @@
 }
 
 .spacing {
-    margin-left: 62px;
+    margin-left: 5%;
+    @include responsive(map-get($devices,tablet)){
+        margin-left: 0;
+       }
 }
 }

@@ -1,21 +1,35 @@
 .section-first {
     padding: 86px 0;
     background: map-get($map: $colors, $key: backgroundColor);
+    @include responsive(map-get($devices, tablet)){
+        padding: 46px 0;
+    }
 
     @at-root {
         .wrapper {
-
             width: 86%;
             margin: 0 auto;
+            @include responsive(map-get($devices, extralargePhone)){
+                width: 94%;
+          }
         }
     
         &__list {
             @include flex();
+            @include responsive(map-get($devices, tablet)){
+                align-items: center;
+                @include direction($direction: column);
+            }
         }
 
         &__list li {
             width: 47%;
-           
+            @include responsive(map-get($devices, tablet)){
+                width: 80%;
+            }
+            @include responsive(map-get($devices, extralargePhone)){
+                width: 95%;
+            }
         }
 
         &__list li figure {
@@ -26,11 +40,18 @@
 
         &__list li:last-child {
             margin-left: 6%;
+            @include responsive(map-get($devices, tablet)){
+                margin-left: 0;
+                margin-top: 40px;
+            }
         }
 
         &__content {
             padding: 55px;
             background: map-get($map: $colors, $key: whiteColor);
+            @include responsive(map-get($devices, extralargePhone)){
+                padding: 30px;
+          }
         }
         
         .underline--line,.heading--header { text-align: center; }
@@ -63,6 +84,9 @@
         &__content p {
             margin: 25px 0;
             line-height: 1.5;
+            @include responsive(map-get($devices, extralargePhone)){
+                @include fontSize($size: 12px);
+          }
         }
 
         &__button {

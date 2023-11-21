@@ -274,6 +274,8 @@ li {
   position: fixed;
   z-index: 1;
   background: transparent; }
+  .header-section .wrapper {
+    width: 100%; }
   .header-section__list {
     display: flex;
     justify-content: space-between; }
@@ -298,6 +300,9 @@ li {
   width: 100%;
   height: 110vh;
   position: relative; }
+  @media only screen and (max-width: 995px) {
+    .banner-section {
+      height: 90vh; } }
   .banner-section__slider, .banner-section__slider li, .banner-section__slider figure, .banner-section .wrapper {
     width: 100%;
     height: 100%; }
@@ -361,15 +366,31 @@ li {
 .section-first {
   padding: 86px 0;
   background: #F2F2F2; }
+  @media only screen and (max-width: 995px) {
+    .section-first {
+      padding: 46px 0; } }
   .wrapper {
     width: 86%;
     margin: 0 auto; }
+    @media only screen and (max-width: 640px) {
+      .wrapper {
+        width: 94%; } }
 
   .section-first__list {
     display: flex; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list {
+        align-items: center;
+        flex-direction: column; } }
 
   .section-first__list li {
     width: 47%; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list li {
+        width: 80%; } }
+    @media only screen and (max-width: 640px) {
+      .section-first__list li {
+        width: 95%; } }
 
   .section-first__list li figure {
     width: 100%; }
@@ -381,10 +402,17 @@ li {
 
   .section-first__list li:last-child {
     margin-left: 6%; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list li:last-child {
+        margin-left: 0;
+        margin-top: 40px; } }
 
   .section-first__content {
     padding: 55px;
     background: #fff; }
+    @media only screen and (max-width: 640px) {
+      .section-first__content {
+        padding: 30px; } }
 
   .underline--line, .heading--header {
     text-align: center; }
@@ -413,6 +441,9 @@ li {
   .section-first__content p {
     margin: 25px 0;
     line-height: 1.5; }
+    @media only screen and (max-width: 640px) {
+      .section-first__content p {
+        font-size: 12px; } }
 
   .section-first__button {
     justify-content: center;
@@ -431,7 +462,6 @@ li {
     color: #fff; }
 
 .section-second {
-  height: 240px;
   position: relative; }
   .section-second .wrapper, .section-second figure {
     width: 100%;
@@ -446,7 +476,11 @@ li {
     height: 100%;
     object-fit: cover; }
   .section-second .underline--line-second {
+    text-align: center;
     font-size: 14px; }
+    @media only screen and (max-width: 640px) {
+      .section-second .underline--line-second {
+        font-size: 12px; } }
   .section-second .underline--line-second::after {
     content: "";
     width: 0;
@@ -460,19 +494,32 @@ li {
     margin-top: 15px;
     margin-bottom: 12px; }
   .section-second div {
+    padding: 40px 0;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 640px) {
+      .section-second div {
+        width: 100%; } }
   .section-second .heading--head-second {
     font-size: 25px; }
 
 .section-third {
-  padding: 85px 0;
+  padding: 85px 0  40px;
   background: #F2F2F2; }
+  @media only screen and (max-width: 995px) {
+    .section-third {
+      padding: 45px 0; } }
+  @media only screen and (max-width: 1280px) {
+    .section-third .wrapper {
+      width: 94%; } }
   .section-third .underline--line-third {
     text-align: center;
     font-size: 14px; }
+    @media only screen and (max-width: 640px) {
+      .section-third .underline--line-third {
+        font-size: 12px; } }
   .section-third .underline--line-third::after {
     content: "";
     width: 0;
@@ -492,15 +539,26 @@ li {
     margin-top: 45px;
     display: flex;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 995px) {
+      .section-third ul {
+        align-items: center;
+        flex-direction: column; } }
   .section-third li {
     width: 47%;
-    padding-bottom: 60px; }
+    padding-bottom: 52px; }
+    @media only screen and (max-width: 995px) {
+      .section-third li {
+        width: 97%;
+        padding-bottom: 22px; } }
   .section-third img {
     border: 15px solid #fff;
     width: 100%;
     object-fit: cover; }
   .section-third .spacing {
-    margin-left: 62px; }
+    margin-left: 5%; }
+    @media only screen and (max-width: 995px) {
+      .section-third .spacing {
+        margin-left: 0; } }
 
 .footer-section {
   padding: 60px 0;

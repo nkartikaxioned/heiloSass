@@ -1,6 +1,5 @@
 .section-second {
 
-    height: 240px;
     position: relative;
 
     .wrapper, figure {
@@ -20,7 +19,11 @@
     }
 
     .underline--line-second {
-        @include fontSize($size: 14px)
+        text-align: center;
+        @include fontSize($size: 14px);
+        @include responsive(map-get($devices, extralargePhone)){
+            @include fontSize($size: 12px);
+      }
     }
 
     .underline--line-second::after {
@@ -40,10 +43,14 @@
     }
 
     div {
+        padding: 40px 0;
         justify-content: center;
         align-items: center;
         @include flex();
         @include direction($direction: column);
+        @include responsive(map-get($devices, extralargePhone)){
+              width: 100%;
+        }
     }
 
     .heading--head-second {
