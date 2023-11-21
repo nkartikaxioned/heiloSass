@@ -366,6 +366,9 @@ li {
   .wrapper {
     width: 86%;
     margin: 0 auto; }
+    @media only screen and (max-width: 640px) {
+      .wrapper {
+        width: 94%; } }
 
   .section-first__list {
     display: flex; }
@@ -401,6 +404,9 @@ li {
   .section-first__content {
     padding: 55px;
     background: #fff; }
+    @media only screen and (max-width: 640px) {
+      .section-first__content {
+        padding: 30px; } }
 
   .underline--line, .heading--header {
     text-align: center; }
@@ -429,6 +435,9 @@ li {
   .section-first__content p {
     margin: 25px 0;
     line-height: 1.5; }
+    @media only screen and (max-width: 640px) {
+      .section-first__content p {
+        font-size: 12px; } }
 
   .section-first__button {
     justify-content: center;
@@ -447,7 +456,6 @@ li {
     color: #fff; }
 
 .section-second {
-  height: 240px;
   position: relative; }
   .section-second .wrapper, .section-second figure {
     width: 100%;
@@ -462,7 +470,11 @@ li {
     height: 100%;
     object-fit: cover; }
   .section-second .underline--line-second {
+    text-align: center;
     font-size: 14px; }
+    @media only screen and (max-width: 640px) {
+      .section-second .underline--line-second {
+        font-size: 12px; } }
   .section-second .underline--line-second::after {
     content: "";
     width: 0;
@@ -476,10 +488,14 @@ li {
     margin-top: 15px;
     margin-bottom: 12px; }
   .section-second div {
+    padding: 40px 0;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 640px) {
+      .section-second div {
+        width: 100%; } }
   .section-second .heading--head-second {
     font-size: 25px; }
 
