@@ -11,11 +11,20 @@
     
         &__list {
             @include flex();
+            @include responsive(map-get($devices, tablet)){
+                align-items: center;
+                @include direction($direction: column);
+            }
         }
 
         &__list li {
             width: 47%;
-           
+            @include responsive(map-get($devices, tablet)){
+                width: 80%;
+            }
+            @include responsive(map-get($devices, extralargePhone)){
+                width: 95%;
+            }
         }
 
         &__list li figure {
@@ -26,6 +35,10 @@
 
         &__list li:last-child {
             margin-left: 6%;
+            @include responsive(map-get($devices, tablet)){
+                margin-left: 0;
+                margin-top: 40px;
+            }
         }
 
         &__content {

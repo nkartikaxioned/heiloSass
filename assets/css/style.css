@@ -369,9 +369,19 @@ li {
 
   .section-first__list {
     display: flex; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list {
+        align-items: center;
+        flex-direction: column; } }
 
   .section-first__list li {
     width: 47%; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list li {
+        width: 80%; } }
+    @media only screen and (max-width: 640px) {
+      .section-first__list li {
+        width: 95%; } }
 
   .section-first__list li figure {
     width: 100%; }
@@ -383,6 +393,10 @@ li {
 
   .section-first__list li:last-child {
     margin-left: 6%; }
+    @media only screen and (max-width: 995px) {
+      .section-first__list li:last-child {
+        margin-left: 0;
+        margin-top: 40px; } }
 
   .section-first__content {
     padding: 55px;
