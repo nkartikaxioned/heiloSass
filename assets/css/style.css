@@ -300,6 +300,9 @@ li {
   width: 100%;
   height: 110vh;
   position: relative; }
+  @media only screen and (max-width: 995px) {
+    .banner-section {
+      height: 90vh; } }
   .banner-section__slider, .banner-section__slider li, .banner-section__slider figure, .banner-section .wrapper {
     width: 100%;
     height: 100%; }
@@ -363,6 +366,9 @@ li {
 .section-first {
   padding: 86px 0;
   background: #F2F2F2; }
+  @media only screen and (max-width: 995px) {
+    .section-first {
+      padding: 46px 0; } }
   .wrapper {
     width: 86%;
     margin: 0 auto; }
@@ -500,11 +506,20 @@ li {
     font-size: 25px; }
 
 .section-third {
-  padding: 85px 0;
+  padding: 85px 0  40px;
   background: #F2F2F2; }
+  @media only screen and (max-width: 995px) {
+    .section-third {
+      padding: 45px 0; } }
+  @media only screen and (max-width: 1280px) {
+    .section-third .wrapper {
+      width: 94%; } }
   .section-third .underline--line-third {
     text-align: center;
     font-size: 14px; }
+    @media only screen and (max-width: 640px) {
+      .section-third .underline--line-third {
+        font-size: 12px; } }
   .section-third .underline--line-third::after {
     content: "";
     width: 0;
@@ -524,15 +539,26 @@ li {
     margin-top: 45px;
     display: flex;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 995px) {
+      .section-third ul {
+        align-items: center;
+        flex-direction: column; } }
   .section-third li {
     width: 47%;
-    padding-bottom: 60px; }
+    padding-bottom: 52px; }
+    @media only screen and (max-width: 995px) {
+      .section-third li {
+        width: 97%;
+        padding-bottom: 22px; } }
   .section-third img {
     border: 15px solid #fff;
     width: 100%;
     object-fit: cover; }
   .section-third .spacing {
-    margin-left: 62px; }
+    margin-left: 5%; }
+    @media only screen and (max-width: 995px) {
+      .section-third .spacing {
+        margin-left: 0; } }
 
 .footer-section {
   padding: 60px 0;

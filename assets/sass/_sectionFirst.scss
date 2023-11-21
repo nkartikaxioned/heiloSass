@@ -1,6 +1,9 @@
 .section-first {
     padding: 86px 0;
     background: map-get($map: $colors, $key: backgroundColor);
+    @include responsive(map-get($devices, tablet)){
+        padding: 46px 0;
+    }
 
     @at-root {
         .wrapper {

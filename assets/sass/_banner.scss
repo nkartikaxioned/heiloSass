@@ -1,7 +1,10 @@
 .banner-section {
     width: 100%;
     height: 110vh;
-    
+    @include responsive(map-get($devices,tablet)){
+        height: 90vh;
+    }
+
     @include position($position: relative);
 
     &__slider,&__slider li,&__slider figure,.wrapper {
